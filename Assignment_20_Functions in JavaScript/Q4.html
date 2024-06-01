@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   
+
+
+  <script>
+  
+  function calculateTax(income) {
+    function taxRates() {
+      if (income <= 50000) {
+        return 0.05; // 5% tax rate
+      } else if (income <= 100000) {
+        return 0.1; // 10% tax rate
+      } else {
+        return 0.15; // 15% tax rate
+      }
+    }
+
+    let taxRate = taxRates();
+    let taxAmount = income * taxRate;
+    return taxAmount;
+  }
+
+  // Testing the functions with various incomes
+  let income1 = 30000;
+  let tax1 = calculateTax(income1);
+  console.log(`For an income of ${income1}, the tax to be paid is ${tax1}`);
+
+  let income2 = 82000;
+  let tax2 = calculateTax(income2);
+  console.log(`For an income of ${income2}, the tax to be paid is ${tax2}`);
+
+  let income3 = 125000;
+  let tax3 = calculateTax(income3);
+  console.log(`For an income of ${income3}, the tax to be paid is ${tax3}`);
+  </script>
+</body>
+</html>

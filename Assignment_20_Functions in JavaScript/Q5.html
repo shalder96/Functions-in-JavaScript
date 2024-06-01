@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function factorial(n){
+      if (n===0 || n===1){
+        return 1;
+      }
+      else {
+        return n * factorial(n-1);
+      }
+    }
+    let num1 = 3;
+    let result1 = factorial(num1);
+    console.log(`The factorial of ${num1} is ${result1}`);
+    let num2 = 4;
+    let result2 = factorial(num2);
+    console.log(`The factorial of ${num2} is ${result2}`);
+    let num3 = 6;
+    let result3 = factorial(num3);
+    console.log(`The factorial of ${num3} is ${result3}`);
+
+  </script>
+</body>
+</html>
